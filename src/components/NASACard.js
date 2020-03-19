@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Card, CardBody, CardSubtitle, Badge } from "reactstrap";
 
+const watDiv = styled.div`
+  background-color: black;
+`;
 const NASABody = styled(Card)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
+  background-color: black;
   color: grey;
 `;
 
@@ -29,7 +32,6 @@ const NASASubTitle = styled(CardSubtitle)`
 `;
 const NASAImg = styled.img`
   border: 1px solid black;
-
   box-shadow: 2px 2px 70px #888888;
 `;
 const NASACredit = styled(Badge)`

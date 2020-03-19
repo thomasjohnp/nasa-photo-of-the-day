@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NASACard from "./NASACard";
 import axios from "axios";
+import styled from "styled-components";
 
 export default function NASAGrid() {
   const [NASA, setNASA] = useState([]);
@@ -16,7 +17,8 @@ export default function NASAGrid() {
       });
   }, []);
   return (
-    <div>
+    <>
+ 
       <NASACard
         imgDate={NASA.date}
         imgExplanation={NASA.explanation}
@@ -25,6 +27,7 @@ export default function NASAGrid() {
         imgTitle={NASA.title}
         imgCopyright={NASA.copyright}
       />
-    </div>
+ 
+    </>
   );
 }
